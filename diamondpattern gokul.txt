@@ -1,0 +1,30 @@
+_____*
+____*_*
+___*_*_*
+__*_*_*_*
+_*_*_*_*_*
+__*_*_*_*
+___*_*_*
+____*_*
+_____*
+#include <stdio.h>
+
+int main() {
+    int i,j,s;
+    for(i=1;i<=5;i++){
+        for(s=1;s<=5-i;s++){
+            printf("_");
+            
+        }for(j=1;j<=i;j++){
+            printf("_*");
+        }printf("\n");
+    }for(i=4;i>=1;i--){
+        for(s=1;s<=5-i;s++){
+            printf("_");
+        }for(j=1;j<=i;j++){
+            printf("_*");
+        }printf("\n");
+    }
+
+    return 0;
+}
